@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding: 40px;
+}
+
+.card-container {
+  flex: 1;
+  height: 100%;
+  border-radius: 12px;
+  background-image: url('./assets/a1bc9dac7ebd895986d0e2a07d3cdfefe4e6ccf5.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-container::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  color: white;
+  padding: 20px;
+}
+
+.card-logo {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: 35%;
+  left: 3%;
+  z-index: 3;
+}
+
+.card-content h1 {
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+
+.card-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 40px;
+  color: white;
+  font-size: 12px;
+  z-index: 2;
+}
+
+.loginform-container {
+  flex: 1;
+  height: 100%;
+  border-radius: 10px;
+  margin-left: 40px;
+  background-color: #ffffff;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginform-container h2 {
+  color: #23231a;
+  font-size: 32px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #23231a;
+  margin-bottom: 3rem;
+}
+
+.field-label {
+  font-size: 13px;
+  color: #23231a;
+  margin-bottom: 4px;
+}
+
+.loginform-container input {
+  height: 40px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #8e8e8e;
+}
+
+.loginform-container input:focus {
+  outline: none;
+  border-color: #6d6d6d;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6d6d6d;
+}
+
+.eye-btn:hover {
+  color: #23231a;
+}
+
+
+.input-error {
+  border-color: #d32f2f;
+}
+
+.error-text {
+  display: block;
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: -14px;
+  margin-bottom: 16px;
+}
+
+.login-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+
+.forgot {
+  text-align: right;
+  font-size: 10px;
+  color: #0288d1;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  height: 45px;
+  border-radius: 12px;
+  border: none;
+  background: linear-gradient(90deg, #880002 0%, #bd1e1e 100%);
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #bd1e1e 0%, #880002 100%);
+}
+
+
+.input-error {
+  border: 1px solid #d32f2f;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: -14px;
+  margin-bottom: 12px;
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 20px;
+  }
+
+    .card-logo {
+    top: 30%;
+    /* left: 5%; */
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-content h1 {
+    font-size: 36px;
+  }
+
+  .card-content p {
+    font-size: 16px;
+  }
+
+  .loginform-container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .card-container {
+    height: 320px;
+    margin-bottom: 20px;
+    background-position: center 20% ;
+  }
+  
+
+  .card-logo {
+    top: 5%;
+    left: 90%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-content {
+    justify-content: flex-end;
+    padding-bottom: 60px;
+  }
+
+  .card-content h1 {
+    font-size: 28px;
+  }
+
+  .card-content p {
+    font-size: 14px;
+  }
+
+  .card-footer {
+    left: 20px;
+    bottom: 12px;
+    font-size: 10px;
+  }
+
+  .loginform-container {
+    margin-left: 0;
+    padding: 30px 20px;
+    height: auto;
+  }
+
+  .loginform-container h2 {
+    font-size: 24px;
+  }
+
+  .login-btn {
+    height: 44px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    height: 280px;
+  }
+
+  .card-logo {
+    top: 5%;
+    left: 85%;
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-content h1 {
+    font-size: 24px;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+}
+

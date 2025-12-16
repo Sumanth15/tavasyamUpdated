@@ -1,0 +1,107 @@
+.topbar {
+  width: 100%;
+  background: linear-gradient(90deg, #6b7c8c, #4c5f70);
+  padding: 15px 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+}
+
+.topbar-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar-greeting {
+  font-size: 13px;
+  opacity: 0.85;
+  margin: 0;
+}
+
+.topbar-name {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 4px 0 0;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.notification-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.notification-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+
+
+
+
+.topbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-btn {
+  display: none;
+  color: #ffffff;
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  
+.topbar-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.topbar-text {
+  display: flex;
+  flex-direction: column;
+}
+  .menu-btn {
+    display: flex;
+  }
+}
+

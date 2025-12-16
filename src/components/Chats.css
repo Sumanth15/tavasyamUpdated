@@ -1,0 +1,88 @@
+.chats {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+}
+
+.chats-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.chats-header h4{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.chats-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.chats-arrow:hover {
+  color: #000;
+}
+
+
+.chats-header h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.chats-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.chat-item {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.chat-content {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.chat-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-name {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.chat-item {
+  display: flex;
+  gap: 2px;
+  padding: 12px 0;
+}
+
+.chat-item:not(:last-child) {
+  border-bottom: 1px solid #e6e6e6;
+}
+
+
+.chat-message {
+  font-size: 12px;
+  color: #666;
+  margin: 2px 0 0;
+}
+
+
+.chats {
+  box-shadow: var(--card-shadow);
+}
